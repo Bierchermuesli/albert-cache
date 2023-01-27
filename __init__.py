@@ -1,5 +1,5 @@
 """
-This extensions tests some cache issue?
+This extensions tests some cache or variable reference issue?
 """
 
 from albert import *
@@ -30,17 +30,13 @@ class Plugin(QueryHandler):
     def finalize(self):
         info('finalize')
 
-
-
     def debug(self,i):
         debug('debug '+i)
-
 
 
     def handleQuery(self, query):
         
         items=[]
-
         list = ["foo","bar","bazen"]
 
         for i in list:
